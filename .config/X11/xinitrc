@@ -1,0 +1,53 @@
+#!/bin/sh
+
+#userresources=$HOME/.Xresources
+#usermodmap=$HOME/.Xmodmap
+userresources=$XDG_CONFIG_HOME/X11/Xresources
+usermodmap=$XDG_CONFIG_HOME/X11/Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+# merge in defaults and keymaps
+[ -f $sysresources ] && xrdb -merge $sysresources
+[ -f $sysmodmap ] && xmodmap $sysmodmap
+[ -f "$userresources" ] && xrdb -merge "$userresources"
+[ -f "$usermodmap" ] && xmodmap "$usermodmap"
+
+# start some nice programs
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
+
+eval $(ssh-agent)
+
+# refresh rate and resolution
+#xrandr --output DP-0 --mode 1920x1080 --rate 144 #--dpi 92
+
+# shorter delay on continued key press
+xset r rate 200 25
+
+# transparency with blur
+picom -f --experimental-backends &
+
+# wallpaper
+nitrogen --set-zoom-fill --random &
+
+# start MPD (if not running already)
+#[ ! -s ~/.config/mpd/pid ] && mpd
+
+# notification daemon
+dunst &
+
+# hide static mouse
+unclutter &
+
+# status bar
+slstatus &
+
+# wm <3
+while true; do
+    dwm
+done

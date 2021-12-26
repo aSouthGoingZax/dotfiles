@@ -1,0 +1,57 @@
+# this line is just to get conf syntax
+
+set drawbox
+set icons
+set info size:time
+set scrolloff 10
+set sortby ext
+
+# custom functions
+cmd deletefile ${{
+    mv "$f" ~/.TRASH/ &&
+        notify-send "moved to trash" "$(echo "$f" | sed 's/\/home\/blaine/~/')"
+}}
+
+cmd editfile ${{
+    case $(file -bL --mime-type "$f") in
+        inode/directory)
+            exit
+            ;;
+        text/*)
+            $EDITOR "$f" 2>/dev/null
+            ;;
+        image/*)
+            setsid -f gimp "$f" 2>/dev/null
+            ;;
+    esac
+}}
+
+cmd openforked ${{
+    case $(file -bL --mime-type "$f") in
+        inode/directory)
+            exit
+            ;;
+        text/*)
+            setsid -f $STERM -e $EDITOR "$f" 2>/dev/null
+            ;;
+        application/pdf)
+            zathura --fork "$f" 2>/dev/null
+            ;;
+        *)
+            setsid -f xdg-open "$f" 2>/dev/null
+            ;;
+    esac
+}}
+
+# unmap defaults
+map e
+
+# custom mappings
+map <enter> openforked
+map <delete> deletefile
+map e editfile
+map E ${{sudo -A $EDITOR "$f" 2>/dev/null}}
+map gt cd ~/.TRASH/
+map ofm ${{setsid -f pcmanfm "$pwd" 2>/dev/null}}
+map on ${{setsid -f $TERMINAL -e lf "$pwd" 2>/dev/null}}
+map ON ${{setsid -f $STERM -e lf "$pwd" 2>/dev/null}}
