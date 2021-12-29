@@ -16,8 +16,6 @@ export HISTCONTROL=ignoredups
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ls='ls --group-directories-first --color=auto'
-#alias la='ls -A --group-directories-first --color=auto'
-alias ll='ls -Al --group-directories-first --color=auto'
 alias mv='mv -i'
 alias rm='rm -i'
 alias untar='tar -xvf'
