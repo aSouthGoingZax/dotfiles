@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 #PS1='[\u@\h \W]\$ '
-export PS1="\[\033[38;5;196m\][\[$(tput sgr0)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]\[\033[38;5;51m\]@\[$(tput sgr0)\]\[\033[38;5;208m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;51m\]\W\[$(tput sgr0)\]\[\033[38;5;196m\]]\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+#export PS1="\[\033[38;5;196m\][\[$(tput sgr0)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]\[\033[38;5;51m\]@\[$(tput sgr0)\]\[\033[38;5;208m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;51m\]\W\[$(tput sgr0)\]\[\033[38;5;196m\]]\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 
 set -o vi
 
@@ -31,3 +31,5 @@ alias dit='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
 [ -f "$XDG_CONFIG_HOME/lf/lfcd.sh" ] && source "$XDG_CONFIG_HOME/lf/lfcd.sh"
 bind '"\C-o":"lfcd\C-m"'
+
+eval "$(starship init bash)"
