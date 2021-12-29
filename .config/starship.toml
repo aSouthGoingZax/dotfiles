@@ -1,0 +1,163 @@
+# https://starship.rs/config/
+
+# colours can be specified like this:
+#success_symbol	"[❯](bg:#E0B25D fg:bold #A6A6A6)"
+
+add_newline = true
+#scan_timeout = 30
+
+[character]
+#format = "$symbol "
+success_symbol = "[╰╴](green)[λ](cyan)"
+error_symbol = "[╰╴](green)[X](red)"
+#vicmd_symbol = "[❮](bold green)"
+#disabled = false
+
+#[cmd_duration]
+#format = " took [$duration]($style) "
+#style = "bold yellow"
+#min_time = 2_000
+#show_milliseconds = false
+#style = "bold yellow"
+#show_notifications = false
+#min_time_to_notify	45_000
+#disabled = false
+
+[directory]
+format = "[╭╴](green)[$path](yellow) "
+#format = "[$path]($style)[$read_only]($read_only_style) "
+#style = "bold cyan"
+#read_only = "🔒"
+#read_only_style = "red"
+#repo_root_style = None
+#home_symbol = "~"
+truncation_symbol = ".../"
+#truncation_length = 3
+#truncate_to_repo = true
+#disabled = false
+
+[git_branch]
+#format = "on [$symbol$branch]($style) "
+#style = "bold purple"
+#symbol = " "
+#truncation_length = 4
+#truncation_symbol = ".../"
+#always_show_remote = false
+#only_attached = false
+#disabled = false
+
+#[git_commit]
+#format = "[\\($hash$tag\\)]($style) "
+#style = "bold green"
+#commit_hash_length = 7
+#only_detached = true
+#tag_disabled = true
+#tag_symbol = " 🏷 "
+#disabled = false
+
+#[git_state]
+#format = '\([$state( $progress_current/$progress_total)]($style)\) '
+#style = "bold yellow"
+#rebase = "REBASING"
+#merge = "MERGING"
+#revert = "REVERTING"
+#cherry_pick = "CHERRY-PICKING"
+#bisect = "BISECTING"
+#am = "AM"
+#am_or_rebase = "AM/REBASE"
+#disabled = false
+
+#[git_metrics]
+#format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
+#added_style = "bold green"
+#deleted_style = "bold red"
+#only_nonzero_diffs = true
+#disabled = true
+
+#[git_status]
+#format = '([\[$all_status$ahead_behind\]]($style) )'
+#style = "bold red"
+#conflicted = "="
+#ahead = "⇡${count}"
+#behind = "⇣${count}"
+#diverged = "⇕"
+#up_to_date = ""
+#untracked = "?"
+#stashed = "$"
+#modified = "!"
+#staged = "+"
+#renamed = "»"
+#deleted = "✘"
+#disabled = false
+
+#[golang]
+#format = "via [$symbol($version )]($style)"
+#version_format = "v${raw}"
+#style = "bold cyan"
+#symbol = "🐹 "
+#detect_extensions = ["go"]
+#detect_files = ["go.mod", "go.sum", "glide.yaml", "Gopkg.yml", "Gopkg.lock", ".go-version"]
+#detect_folders = ["Godeps"]
+#disabled = false
+
+#[hostname]
+#format = "[$hostname]($style) in "
+#style = "bold dimmed green"
+#ssh_only = true
+#trim_at = "."
+#disabled = false
+
+[line_break]
+disabled = false
+
+#[lua]
+#format = "via [$symbol($version )]($style)"
+#version_format = "v${raw}"
+#style = "bold blue"
+#symbol = "🌙 "
+#detect_extensions = ["lua"]
+#detect_files = [".lua-version"]
+#detect_folders = ["lua"]
+#lua_binary = "lua"
+#disabled = false
+
+#[package]
+#format = "is [$symbol$version]($style) "
+#version_format = "v${raw}"
+#style = "bold 208"
+#symbol = "📦 "
+#display_private = false
+#disabled = false
+
+#[rust]
+#format = "via [$symbol($version )]($style)"
+#version_format = "v${raw}"
+#style = "bold red"
+#symbol = "🦀 "
+#detect_extensions = ["rs"]
+#detect_files = ["Cargo.toml"]
+#detect_folders = []
+#disabled = false
+
+#[status]
+#format = "[$symbol$status]($style) "
+#style = "bold red"
+#symbol = "✖"
+#success_symbol = "✔️"
+#not_executable_symbol = "🚫"
+#not_found_symbol = "🔍"
+#sigint_symbol = "🧱"
+#signal_symbol = "⚡"
+#recognize_signal_code = true
+#map_symbol = false
+#pipestatus = false
+#pipestatus_separator = |
+#pipestatus_format = \\[$pipestatus\\] => [$symbol$common_meaning$signal_name$maybe_int]($style)
+#disabled = true
+
+#[username]
+#format = "[$user]($style) in "
+#style_root = "bold red"
+#style_user = "bold yellow"
+#show_always = false
+#disabled = false
