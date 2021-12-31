@@ -8,6 +8,7 @@ window:
   #normal:
     #family: monospace
     #family: FantasqueSansMono Nerd Font
+    #family: VictorMono Nerd Font
     #family: Iosevka Term
   #size: 11.0
   #offset:
@@ -17,6 +18,33 @@ window:
 draw_bold_text_with_bright_colors: true
 
 schemes:
+  slayer: &slayer
+    primary:
+      background: '#190000'
+      foreground: '#a80000'
+    cursor:
+      text:       '#190000'
+      cursor:     '#dd0000'
+    selection:
+      background: '#cc0000'
+    normal:
+      black:      '#661919'
+      red:        '#991919'
+      green:      '#99cc00'
+      yellow:     '#cccc00'
+      blue:       '#996699'
+      magenta:    '#993366'
+      cyan:       '#996666'
+      white:      '#cc9999'
+    bright:
+      black:      '#661919'
+      red:        '#991919'
+      green:      '#99cc00'
+      yellow:     '#cccc00'
+      blue:       '#996699'
+      magenta:    '#993366'
+      cyan:       '#996666'
+      white:      '#cc9999'
   Night_Owl: &night-owl
     primary:
       #background: '#000000'
@@ -46,7 +74,6 @@ schemes:
       magenta:    '#db7efe'
       cyan:       '#7fdbca'
       white:      '#ffffff'
-
   Tokyo_Night: &tokyo-night
     primary:
       background: '#000000'
@@ -76,10 +103,8 @@ schemes:
       cyan:       '#69e3ff'
       white:      '#d4deff'
 
-colors: *night-owl
-#colors: *tokyo-night
+colors: *slayer
 
-#background_opacity: 1
 background_opacity: 0.95
 
 # Key bindings
