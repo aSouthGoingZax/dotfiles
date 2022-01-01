@@ -28,7 +28,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
-export STERM="st"
+export STERMINAL="st"
 export BROWSER="brave"
 
 [ -f "$XDG_CONFIG_HOME/lf/lf-icons" ] && source "$XDG_CONFIG_HOME/lf/lf-icons"
