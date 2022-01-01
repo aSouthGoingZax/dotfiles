@@ -54,5 +54,5 @@ map E ${{sudo -A $EDITOR "$f" 2>/dev/null}}
 map gt cd ~/.TRASH/
 map ofm ${{setsid -f pcmanfm "$PWD" 2>/dev/null}}
 map on ${{setsid -f $TERMINAL -e lf "$PWD" 2>/dev/null}}
-map ON ${{setsid -f $STERM -e lf "$PWD" 2>/dev/null}}
+map ON ${{setsid -f $STERMINAL -e lf "$PWD" 2>/dev/null}}
 map W ${{setsid -f $TERMINAL --working-directory "$PWD" 2>/dev/null}}
