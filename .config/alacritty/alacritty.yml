@@ -18,7 +18,87 @@ window:
 draw_bold_text_with_bright_colors: true
 
 schemes:
-  slayer: &slayer
+  Catppuccin: &catppuccin
+    primary:
+      background: '#1E1E28'
+      foreground: '#DADAE8'
+    cursor:
+      text:       '#1E1E28'
+      cursor:     '#B1E3AD'
+    normal:
+      black:      '#6E6C7E'
+      red:        '#E38C8F'
+      green:      '#B1E3AD'
+      yellow:     '#EBDDAA'
+      blue:       '#A4B9EF'
+      magenta:    '#C6AAE8'
+      cyan:       '#E5B4E2'
+      white:      '#DADAE8'
+    bright:
+      black:      '#646274'
+      red:        '#ed8285'
+      green:      '#a7eda3'
+      yellow:     '#f5e7a0'
+      blue:       '#9aaff9'
+      magenta:    '#d0a0f2'
+      cyan:       '#dbbeec'
+      white:      '#e4e4f2'
+  Night_Owl: &night-owl
+    primary:
+      background: '#011627'
+      foreground: '#d6deeb'
+    cursor:
+      text:       '#011627'
+      cursor:     '#d6deeb'
+    selection:
+      background: '#1b90dd'
+    normal:
+      black:      '#434242'
+      red:        '#ef5350'
+      green:      '#22da6e'
+      yellow:     '#c5e478'
+      blue:       '#82aaff'
+      magenta:    '#c792ea'
+      cyan:       '#21c7a8'
+      white:      '#ebebeb'
+    bright:
+      black:      '#393838'
+      red:        '#f94946'
+      green:      '#18e464'
+      yellow:     '#cfee6e'
+      blue:       '#78a0ff'
+      magenta:    '#d188f4'
+      cyan:       '#17d1b2'
+      white:      '#f5f5f5'
+  One_Dark: &one-dark
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+    cursor:
+      text:       '#282c34'
+      cursor:     '#528bff'
+    selection:
+      text:       '#abb2bf'
+      background: '#3e4451'
+    normal:
+      black:      '#5c6370'
+      red:        '#e06c75'
+      green:      '#98c379'
+      yellow:     '#e5c07b'
+      blue:       '#61afef'
+      magenta:    '#c678dd'
+      cyan:       '#56b6c2'
+      white:      '#828997'
+    bright:
+      black:      '#525966'
+      red:        '#ea626b'
+      green:      '#8ecd6f'
+      yellow:     '#efca71'
+      blue:       '#57a5f9'
+      magenta:    '#d06ee7'
+      cyan:       '#4cc0cc'
+      white:      '#8c93a1'
+  Slayer: &slayer
     primary:
       background: '#190000'
       foreground: '#a80000'
@@ -45,35 +125,6 @@ schemes:
       magenta:    '#993366'
       cyan:       '#996666'
       white:      '#cc9999'
-  Night_Owl: &night-owl
-    primary:
-      #background: '#000000'
-      background: '#011627'
-      #foreground: '#d6deeb'
-      foreground: '#c2cad7'
-    cursor:
-      text:       '#011627'
-      cursor:     '#d6deeb'
-    selection:
-      background: '#1b90dd'
-    normal:
-      black:      '#434242'
-      red:        '#ef5350'
-      green:      '#22da6e'
-      yellow:     '#c5e478'
-      blue:       '#82aaff'
-      magenta:    '#c792ea'
-      cyan:       '#21c7a8'
-      white:      '#e1e1e1'
-    bright:
-      black:      '#575656'
-      red:        '#ff3f3c'
-      green:      '#0eee5a'
-      yellow:     '#ffeb95'
-      blue:       '#6e96ff'
-      magenta:    '#db7efe'
-      cyan:       '#7fdbca'
-      white:      '#ffffff'
   Tokyo_Night: &tokyo-night
     primary:
       background: '#000000'
@@ -95,15 +146,15 @@ schemes:
       white:      '#c0caf5'
     bright:
       black:      '#373e5e'
-      red:        '#ff5d75'
-      green:      '#5feeb6'
-      yellow:     '#f4c354'
-      blue:       '#668eff'
-      magenta:    '#cf86ff'
-      cyan:       '#69e3ff'
-      white:      '#d4deff'
+      red:        '#ff6a82'
+      green:      '#69e4c0'
+      yellow:     '#eab95e'
+      blue:       '#6e96ff'
+      magenta:    '#c78eff'
+      cyan:       '#6edeff'
+      white:      '#cad4ff'
 
-colors: *slayer
+colors: *tokyo-night
 
 background_opacity: 0.95
 
