@@ -11,10 +11,10 @@ set recolor-reverse-video true
 #set default-bg "#1a1b26"
 #set default-fg "#a9b1d6"
 # night owl
-#set recolor-darkcolor "#c2cad7"
+#set recolor-darkcolor "#d6deeb"
 #set recolor-lightcolor "#011627"
 #set default-bg "#011627"
-#set default-fg "#c2cad7"
+#set default-fg "#d6deeb"
 # slayer
 set recolor-darkcolor "#a80000"
 set recolor-lightcolor "#190000"
