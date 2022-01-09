@@ -1,0 +1,78 @@
+# separator line
+set color_separator=1
+
+## BG COLOURS
+# command line
+set color_cmdline_bg=-1
+# status line
+set color_statusline_bg=6
+# now playing line
+set color_titleline_bg=6
+# window
+set color_win_bg=-1
+# active window, selected row and now playing
+set color_win_cur_sel_bg=4
+# inactive window, selected row and now playing
+set color_win_inactive_cur_sel_bg=12
+# inactive window, selected row
+set color_win_inactive_sel_bg=12
+# active window, selected row
+set color_win_sel_bg=4
+# window titles (topmost line of the screen)
+set color_win_title_bg=12
+# album row in the tracks window
+set color_trackwin_album_bg=-1
+
+## FG COLOURS
+# command line
+set color_cmdline_fg=196
+# command line error message
+set color_error=196
+# command line info message
+set color_info=226
+# status line
+set color_statusline_fg=16
+# now playing line
+set color_titleline_fg=233
+# unselected text
+set color_win_fg=4
+# now playing track
+set color_win_cur=3
+# active window, selected row and now playing
+set color_win_cur_sel_fg=236
+# directories in browser
+set color_win_dir=-1
+# inactive window, selected row and now playing
+set color_win_inactive_cur_sel_fg=0
+# inactive window, selected row
+set color_win_inactive_sel_fg=0
+# active window, selected row
+set color_win_sel_fg=16
+# window titles (topmost line of the screen)
+set color_win_title_fg=233
+# album row in the tracks window
+set color_trackwin_album_fg=2
+
+## ATTRIBUTES   [default,blink,bold,reverse,standout,underline]
+# command line
+set color_cmdline_attr=default
+# status line
+set color_statusline_attr=default
+# now playing line
+set color_titleline_attr=bold
+# now playing track
+set color_win_cur_attr=bold
+# active window, selected row and now playing
+set color_win_cur_sel_attr=bold
+# unselected font
+set color_win_attr=default
+# inactive window, selected row and now playing
+set color_win_inactive_cur_sel_attr=bold
+# inactive window, selected row
+set color_win_inactive_sel_attr=default
+# active window, selected row
+set color_win_sel_attr=default
+# window titles (topmost line of the screen)
+set color_win_title_attr=bold
+# album row in the tracks window
+set color_trackwin_album_attr=bold
