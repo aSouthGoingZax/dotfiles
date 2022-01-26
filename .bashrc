@@ -19,12 +19,11 @@ alias ls='ls --group-directories-first --color=auto'
 alias mv='mv -i'
 alias rm='rm -i'
 alias untar='tar -xvf'
-#alias nv='nvim'
 #alias wget='wget -o /dev/null'
 alias yt-dl-a='youtube-dl -x --audio-format mp3 --audio-quality 0'
 alias cnr='compile-and-run'
 alias cnd='compile-and-run -d'
 alias suckit='[ -f "config.h" ] && sudo -A rm config.h && sudo make clean install'
-alias dit='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias dit='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 eval "$(starship init bash)"
