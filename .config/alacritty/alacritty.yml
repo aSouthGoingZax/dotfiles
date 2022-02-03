@@ -3,6 +3,7 @@ window:
     x: 8
     y: 8
   dynamic_padding: true
+  opacity: 0.95
 
 #font:
   #normal:
@@ -155,8 +156,6 @@ schemes:
       white:      '#cad4ff'
 
 colors: *tokyo-night
-
-background_opacity: 0.95
 
 # Key bindings
 #
