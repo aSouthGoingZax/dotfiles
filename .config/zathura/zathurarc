@@ -1,35 +1,17 @@
 # this line is just to get conf syntax
 
+map b toggle_statusbar
+map i recolor
+
 set font "monospace normal 14"
 set selection-clipboard clipboard
 set recolor true
 set recolor-keephue true
 set recolor-reverse-video true
-# tokyo night
-#set recolor-darkcolor "#a9b1d6"
-#set recolor-lightcolor "#16161e"
-#set default-bg "#16161e"
-#set default-fg "#a9b1d6"
-# night owl
-#set recolor-darkcolor "#d6deeb"
-#set recolor-lightcolor "#011627"
-#set default-bg "#011627"
-#set default-fg "#d6deeb"
-# slayer
-set recolor-darkcolor "#a80000"
-set recolor-lightcolor "#190000"
-set default-bg "#190000"
-set default-fg "#a80000"
-# gruvbox light
-#set recolor-darkcolor "#3c3836"
-#set recolor-lightcolor "#f2e5bc"
-#set default-bg "#f2e5bc"
-#set default-fg "#3c3836"
-# tokyo light
-#set recolor-darkcolor "#343b58"
-#set recolor-lightcolor "#cbccd1"
-#set default-bg "#cbccd1"
-#set default-fg "#343b58"
 
-map b toggle_statusbar
-map i recolor
+#include catppuccin
+#include gruvboxlight
+#include nightowl
+include slayer
+#include tokyolight
+#include tokyonight
