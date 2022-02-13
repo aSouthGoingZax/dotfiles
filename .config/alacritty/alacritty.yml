@@ -127,8 +127,9 @@ schemes:
       white:      '#cc9999'
   Tokyo_Night: &tokyo-night
     primary:
-      background: '#000000'
+      background: '#16161e'
       #background: '#1a1b26'
+      #background: '#000000'
       foreground: '#a9b1d6'
     cursor:
       text:       '#1a1b26'
@@ -137,8 +138,10 @@ schemes:
       background: '#515c7e'
     normal:
       black:      '#414868'
+      #black:      '#363b54'
       red:        '#f7768e'
       green:      '#73daca'
+      #green:      '#41a6b5'
       yellow:     '#e0af68'
       blue:       '#7aa2f7'
       magenta:    '#bb9af7'
@@ -153,6 +156,34 @@ schemes:
       magenta:    '#c78eff'
       cyan:       '#6edeff'
       white:      '#cad4ff'
+  Tokyo_Light: &tokyo-light
+    primary:
+      background: '#cbccd1'
+      #background: '#d5d6db'
+      foreground: '#343b58'
+    cursor:
+      text:       '#343b58'
+      cursor:     '#828594'
+    selection:
+      background: '#fafbff'
+    normal:
+      black:      '#0f0f14'
+      red:        '#8c4351'
+      green:      '#33635c'
+      yellow:     '#8f5e15'
+      blue:       '#34548a'
+      magenta:    '#5a4a78'
+      cyan:       '#0f4b6e'
+      white:      '#828594'
+    bright:
+      black:      '#19191E'
+      red:        '#964D5B'
+      green:      '#3D6D66'
+      yellow:     '#99681F'
+      blue:       '#3E5E94'
+      magenta:    '#645482'
+      cyan:       '#195578'
+      white:      '#8C8F9E'
 
 colors: *tokyo-night
 
