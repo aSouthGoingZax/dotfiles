@@ -72,7 +72,8 @@ schemes:
       white:      '#f5f5f5'
   One_Dark: &one-dark
     primary:
-      background: '#282c34'
+      #background: '#282c34'
+      background: '#000000'
       foreground: '#abb2bf'
     cursor:
       text:       '#282c34'
@@ -129,7 +130,6 @@ schemes:
     primary:
       background: '#16161e'
       #background: '#1a1b26'
-      #background: '#000000'
       foreground: '#a9b1d6'
     cursor:
       text:       '#1a1b26'
@@ -156,36 +156,36 @@ schemes:
       magenta:    '#c78eff'
       cyan:       '#6edeff'
       white:      '#cad4ff'
-  Tokyo_Light: &tokyo-light
+  Nord_bastardised: &nord-light
     primary:
-      background: '#cbccd1'
-      #background: '#d5d6db'
-      foreground: '#343b58'
-    cursor:
-      text:       '#343b58'
-      cursor:     '#828594'
-    selection:
-      background: '#fafbff'
+      background: '#D8DEE9'
+      foreground: '#2E3440'
+    #cursor:
+      #text: CellBackground
+      #cursor: CellForeground
+    #selection:
+      #text: CellBackground
+      #background: CellForeground
     normal:
-      black:      '#0f0f14'
-      red:        '#8c4351'
-      green:      '#33635c'
-      yellow:     '#8f5e15'
-      blue:       '#34548a'
-      magenta:    '#5a4a78'
-      cyan:       '#0f4b6e'
-      white:      '#828594'
+      black:   '#10192B'
+      red:     '#8C2E37'
+      green:   '#708B59'
+      yellow:  '#B89858'
+      blue:    '#2B4E79'
+      magenta: '#815B7A'
+      cyan:    '#558D9D'
+      white:   '#B2B6BD'
     bright:
-      black:      '#19191E'
-      red:        '#964D5B'
-      green:      '#3D6D66'
-      yellow:     '#99681F'
-      blue:       '#3E5E94'
-      magenta:    '#645482'
-      cyan:       '#195578'
-      white:      '#8C8F9E'
+      black:   '#060F21'
+      red:     '#96242D'
+      green:   '#66954F'
+      yellow:  '#C2A24E'
+      blue:    '#214483'
+      magenta: '#8B5184'
+      cyan:    '#4B97A7'
+      white:   '#BCC0C7'
 
-colors: *tokyo-night
+colors: *one-dark
 
 # Key bindings
 #
