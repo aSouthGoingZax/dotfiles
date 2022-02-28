@@ -14,14 +14,17 @@ cmd deletefile ${{
 
 cmd editfile ${{
     case $(file -bL --mime-type "$f") in
-        inode/directory)
-            exit
-            ;;
         text/*)
             $EDITOR "$f" 2>/dev/null
             ;;
         image/*)
             setsid -f gimp "$f" 2>/dev/null
+            ;;
+        inode/directory)
+            exit
+            ;;
+        *)
+            notify-send "edit program not set" && exit
             ;;
     esac
 }}
