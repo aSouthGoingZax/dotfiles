@@ -13,5 +13,5 @@ set recolor-reverse-video true
 #include gruvboxlight
 #include nightowl
 include slayer
-#include tokyolight
+#include nordlight
 #include tokyonight
