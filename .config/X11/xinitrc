@@ -35,8 +35,8 @@ picom -f --experimental-backends &
 # wallpaper
 nitrogen --set-zoom-fill --random &
 
-# start MPD (if not running already)
-#[ ! -s ~/.config/mpd/pid ] && mpd
+# music player daemon
+mpd
 
 # notification daemon
 dunst &
