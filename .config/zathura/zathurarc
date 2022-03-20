@@ -9,9 +9,9 @@ set recolor true
 set recolor-keephue true
 set recolor-reverse-video true
 
-#include catppuccin
 #include gruvboxlight
-#include nightowl
-include slayer
 #include nordlight
+#include nightowl
+#include oooh_green
+include slayer
 #include tokyonight
